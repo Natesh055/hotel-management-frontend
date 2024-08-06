@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="center">Welcome User</h2>
+        <a href="">Cancel Booking</a>
+    </header>
+    
+    <div class="booking-form">
+        <h2>Booking Details</h2>
+        <form id="booking-form">
+            <label for="check-in-date">Check-in Date:</label>
+            <input type="date" id="check-in-date" required>
+            <label for="check-out-date">Check-out Date:</label>
+            <input type="date" id="check-out-date" required>
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            <label for="guest-name">Guest Name:</label>
+            <input type="text" id="guest-name" required>
+
+            <label for="guest-number">Guest Contact Number:</label>
+            <input type="phone" id="guest-number" required>
+
+            <label for="guest-email">Guest Email:</label>
+            <input type="email" id="guest-email" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
